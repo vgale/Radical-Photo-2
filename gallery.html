@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RadicalPhoto Gallery</title>
+	<link href='http://fonts.googleapis.com/css?family=Gruppo' rel='stylesheet'><!--ignore error-->
+	<link type="text/css" rel="stylesheet" href="css/radicalphoto.css">
+    <link href="css/lightbox.css" rel="stylesheet">
+    <!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>-->
+     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+    
+        
+    
+
+
+    
+</head>
+<body>
+
+<div id="header">
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="gallery.html">Gallery</a></li>
+		<li><a href="about.html">About</a></li>
+		<li><a href="contact.html">Contact</a></li>
+	</ul>
+
+	<h1>RadicalPhoto</h1>
+
+</div>
+
+<div id="main_wrapper">
+
+	<div id="content">
+	<h2>Gallery</h2>
+
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+    
+    
+    <!--<div id="container" style="width:600px;text-align:center">
+		<img id="largeImage" src="images/blue_dress.jpg" style="width:300px;"/>
+	</div>
+
+	<div id="thumbs">
+        <img style="width:150px;" src="images/boxer.jpg"  alt="1st image description" />
+        <img style="width:150px;" src="images/cow.jpg" alt="2nd image description" />
+        <img style="width:150px;" src="images/blue_dress.jpg" alt="3rd image description" />
+        <img style="width:150px;" src="images/eye.jpg" alt="4th image description" />
+	</div>-->
+
+    
+    
+    
+    
+    
+
+	
+     <div id="thumbs">
+     <a href="images/blue_dress.jpg" class="thumbnail" data-lightbox="bluedress"><img class="smallpx" src="images/blue_dress.jpg" alt="Image 1"/></a>
+	<a href="images/boxer.jpg" class="thumbnail" data-lightbox="boxer"><img class="smallpx" src="images/boxer.jpg" alt="Thumbnail 2"/></a>
+    <a href="images/cow.jpg" class="thumbnail" data-lightbox="cow"><img class="smallpx" src="images/cow.jpg" alt="Thumbnail 2"/></a>
+    <a href="images/country_boy_relaxing.jpg" class="thumbnail" data-lightbox="country"><img class="smallpx" src="images/country_boy_relaxing.jpg" alt="Thumbnail 2"/></a>
+    <a href="images/eye.jpg" class="thumbnail" data-lightbox="eye"><img class="smallpx" src="images/eye.jpg" alt="Thumbnail 2"/></a>
+    <a href="images/ice_swim.jpg" class="thumbnail" data-lightbox="swim"><img class="smallpx" src="images/ice_swim.jpg" alt="Thumbnail 2"/></a>
+    <a href="images/sitting.jpg" class="thumbnail" data-lightbox="sitting"><img class="smallpx" src="images/sitting.jpg" alt="Thumbnail 2"/></a>
+     </div><!--end thumbs div-->
+     
+     <div id="imageWrap">
+  <img src="images/blue_dress.jpg" alt="Main Image" id="largeImage" />
+</div>
+
+
+	</div>
+
+	<div id="footer">
+	<p>All content &copy; Copyright</p>
+	</div>
+
+</div>
+
+<script>
+
+var arrayBig = ["blue_dress.jpg","boxer.jpg","cow.jpg","country_boy_relaxing.jpg","eye.jpg","ice_swim.jpg","sitting.jpg"];
+
+$('#thumbs img').hover(function(){
+    $('#largeImage').attr('src',$(this).attr('src').replace('largeImage'));
+	
+
+});
+
+
+
+</script>
+
+
+<script src="js/lightbox-plus-jquery.js"></script>
+</body>
+
+
+</html>
